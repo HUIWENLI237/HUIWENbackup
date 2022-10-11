@@ -3,8 +3,11 @@ git add .  添加当前目录所有文件
 git status  查看 有改动文件，以及add的文件。查看 add后 待提交到本地仓库的东西。   在哪编辑即工作区，add后到暂存区，commit后到本地仓库，push到远程仓库
 git commit -m '改动备注'
 git push 可指定远程仓库，如下
+git clone 指定文件夹git init即可使用，无需remote add ssh地址关联远程仓库， git clone ssh地址 即可复制仓库。克隆仓库要更新则
+git clone ssh地址
 
-多个远程时 git push 默认 HUIWEN
+
+多个远程仓库时 git push 默认 HUIWEN
 git push backup main 才是 HUIWENbackup
 git pull backup main   才是 HUIWENbackup
 git remote -v 查看到当前本地分支，目前关联了两个远程分支 HUIWEN HUIWENbackup
@@ -19,7 +22,7 @@ From github.com:HUIWENLI237/HUIWENbackup
 fatal: refusing to merge unrelated histories
 
 首次尝试 $ git push -u origin main  其次  git push backup main         git pull backup main
- git clone ssh地址即可复制仓库
+
 
 
 add之后要commit 否则会：
