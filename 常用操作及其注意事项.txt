@@ -2,7 +2,7 @@ git init 则将当前文件夹做为推送下拉对象   然后 git remote add �
 git add .  添加当前目录所有文件
 git status  查看 有改动文件，以及add的文件。查看 add后 待提交到本地仓库的东西。   在哪编辑即工作区，add后到暂存区，commit后到本地仓库，push到远程仓库
 git commit -m '改动备注'
-git push 可指定远程仓库，如下
+git push 可指定远程仓库，如下   git push 也有可能网络问题失败
 git clone 指定文件夹git init即可使用，无需remote add ssh地址关联远程仓库， git clone ssh地址 即可复制仓库。克隆仓库要更新则
 git clone ssh地址
 
