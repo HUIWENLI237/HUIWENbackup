@@ -1,0 +1,23 @@
+
+git init 则将当前文件夹做为推送下拉对象
+git add.
+git commit -m '改动备注'
+git push 可指定远程仓库，如下
+
+多个远程时 git push 默认 HUIWEN
+git push backup main 才是 HUIWENbackup
+git pull backup main   才是 HUIWENbackup
+git remote -v 查看到当前本地分支，目前关联了两个远程分支 HUIWEN HUIWENbackup
+
+
+如远程HUIWEN  HUIWENbackup 在那边有改动了，需先 pull 远程最新，才能 push 本地上去
+
+本地文件夹分支关联多个远程，首次 Histories问题解决：$ git pull backup main --allow-unrelated-histories 
+$ git pull backup main
+From github.com:HUIWENLI237/HUIWENbackup
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+首次尝试 $ git push -u origin main  其次  git push backup main         git pull backup main
+
+
