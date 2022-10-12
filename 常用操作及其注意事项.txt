@@ -4,7 +4,7 @@ git status  查看 有改动文件，以及add的文件。查看 add后 待提�
 git commit -m '改动备注'
 git push 可指定远程仓库，如下   git push 也有可能网络问题失败
 git clone 指定文件夹git init即可使用，无需remote add ssh地址关联远程仓库， git clone ssh地址 即可复制仓库。克隆仓库要更新则
-git clone ssh地址
+git clone ssh地址   首次 clone 常失败 重新敲git clone 重新复制地址再试
 
 
 多个远程仓库时 git push 默认 HUIWEN
